@@ -1,0 +1,57 @@
+guid: d02cb13f-c9a2-4812-8673-c10686b632a1
+liveboard:
+  name: Liveboard_rQuKC5MY
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: "Total Lo Revenue by Quarterly Lo Orderdate - Fiscal and C Region, Lo Shipmode"
+      tables:
+      - id: GitVersion
+        name: GitVersion
+        fqn: b069feac-559a-441b-9d70-d7a6c707652c
+      search_query: "[Lo Revenue] [C Region] [Lo Shipmode] [Lo Orderdate] [Lo Orderdate].quarterly"
+      answer_columns:
+      - name: C Region
+      - name: Lo Shipmode
+      - name: Quarter(Lo Orderdate)
+      - name: Total Lo Revenue
+      table:
+        table_columns:
+        - column_id: C Region
+          show_headline: false
+        - column_id: Lo Shipmode
+          show_headline: false
+        - column_id: Quarter(Lo Orderdate)
+          show_headline: false
+        - column_id: Total Lo Revenue
+          show_headline: false
+        ordered_column_ids:
+        - C Region
+        - Lo Shipmode
+        - Quarter(Lo Orderdate)
+        - Total Lo Revenue
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: LINE
+        chart_columns:
+        - column_id: C Region
+        - column_id: Lo Shipmode
+        - column_id: Quarter(Lo Orderdate)
+        - column_id: Total Lo Revenue
+        axis_configs:
+        - x:
+          - Quarter(Lo Orderdate)
+          "y":
+          - Total Lo Revenue
+          color:
+          - C Region
+          - Lo Shipmode
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\"}"
+      display_mode: CHART_MODE
+    viz_guid: dafbce6f-3f7d-4a29-843b-ea2fc3424d68
+  layout:
+    tiles:
+    - visualization_id: Viz_1
+      size: MEDIUM
